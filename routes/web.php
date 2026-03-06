@@ -59,3 +59,46 @@ Route::get('/produk-redirect/{id}', function ($id) {
 })->where('id', '[0-9]+');
 
 Route::get('/controller/hello', [App\Http\Controllers\HelloController::class, 'hello']);
+
+Route::get('/controller/request', [App\Http\Controllers\HelloController::class, 'request']);
+
+Route::get('/input/hello', [App\Http\Controllers\InputController::class, 'hello']);
+Route::post('/input/hello', [App\Http\Controllers\InputController::class, 'hello']);
+
+Route::post('/input/hello/first', [App\Http\Controllers\InputController::class, 'hellofirstname']);
+
+
+Route::post('/input/hello/input', [App\Http\Controllers\InputController::class, 'helloInput']);
+
+Route::post('/input/hello/array', [App\Http\Controllers\InputController::class, 'helloaArray']);    
+
+Route::post('/input/type', [App\Http\Controllers\InputController::class, 'inputType']);
+
+Route::post('/input/filter/only', [App\Http\Controllers\InputController::class, 'filterOnly']);
+
+Route::post('/input/filter/except', [App\Http\Controllers\InputController::class, 'filterExcept']);
+
+Route::post('/input/filter/merge', [App\Http\Controllers\InputController::class, 'filterMerge']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
